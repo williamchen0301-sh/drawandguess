@@ -1,9 +1,10 @@
+import os
 from flask import Flask, render_template_string, request
 from flask_socketio import SocketIO, emit
 import random
 
 app = Flask(__name__)
-app.config['SECRET_KEY'] = 'secret!'
+app.config['SECRET_KEY'] = os.environ.get("SECRET_KEY", "dev_key_for_testing")
 socketio = SocketIO(app, cors_allowed_origins="*")
 
 # --- GAME CONFIG ---
@@ -438,4 +439,5 @@ def handle_chat(data):
         emit('chat_message', {'user': name, 'msg': msg}, broadcast=True)
 
 if __name__ == '__main__':
+
     socketio.run(app, host='0.0.0.0', port=5000, allow_unsafe_werkzeug=True)
