@@ -12,7 +12,7 @@ Install the required library using pip:
 ```bash
 pip install flask-socketio
 
-**###3. Start the Server**
+### 3. Start the Server
 Run the game file in your terminal:
 
 Bash
