@@ -12,13 +12,13 @@ Install the required library using pip:
 ```bash
 pip install flask-socketio
 
-3. Start the Server
+###3. Start the Server
 Run the game file in your terminal:
 
 Bash
 python game.py
 
-4. Play!
+###4. Play!
 Open your web browser and navigate to:
 http://127.0.0.1:5000
 
