@@ -19,7 +19,7 @@ pip install flask-socketio
 Run the game file in your terminal:
 ```
 Bash
-python game.py
+python easy_game.py
 ```
 
 ### 4. Play!
